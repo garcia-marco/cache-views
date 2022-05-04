@@ -12,6 +12,13 @@
 <body>
   <main>
     <div>
+      <form method="post" action="/post">
+        {{--  Product request is an array if form has only this input  --}}
+        <input type="number" name="products[1]">
+        {{--  Product request is an object if you add this input  --}}
+        {{--  <input type="number" name="products[21]">  --}}
+        <button type="submit">Submit</button>
+      </form>
     </div>
   </main>
 </body>

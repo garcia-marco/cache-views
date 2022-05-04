@@ -52,7 +52,10 @@ const bodyParserConfig: BodyParserConfig = {
   form: {
     encoding: 'utf-8',
     limit: '1mb',
-    queryString: {},
+    queryString: {
+      // Adding this line fix the issue
+      // parseArrays: false,
+    },
 
     /*
     |--------------------------------------------------------------------------

@@ -23,3 +23,8 @@ import Route from '@ioc:Adonis/Core/Route'
 Route.get('/', async ({ view }) => {
   return view.render('welcome')
 })
+
+Route.post('/post', async ({ request, response }) => {
+  console.log(request.all())
+  return response.redirect('back')
+})
